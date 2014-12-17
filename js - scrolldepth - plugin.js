@@ -76,13 +76,6 @@
             };
         }
 
-        /**
-         * calculatePercentages() returns a object
-         * based on the docHeight
-         *
-         * @param {Number} docHeight
-         * @return {Object} object
-         */
         function calculatePercentages(docHeight) {
             return {
                 '25%': parseInt(docHeight * 0.25, 10),
@@ -93,14 +86,6 @@
             };
         }
 
-        /**
-         * checkPercentages() 
-         * ?based on the passed in tag name
-         *
-         * @param {String} percentages
-         * @param {Number} scrollDistance
-         * @return ?
-         */
         function checkPercentages(percentages, scrollDistance) {
             each(percentages, function (key, val) {
                 if (inArray(key, cache) === -1 && scrollDistance >= val) {
