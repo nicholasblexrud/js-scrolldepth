@@ -5,11 +5,7 @@ A simple vanilla javascript plugin to track scroll depth. A lot of this was borr
 
 Tested on: Chrome, Firefox, Safari, IE7-11
 
-To initialize: 
-
-`<script>
-var foo = ScrollDepth();
-</script>`
+To initialize: simply add the script to your webpage.
 
 Currently I'm logging (console.log):
 
