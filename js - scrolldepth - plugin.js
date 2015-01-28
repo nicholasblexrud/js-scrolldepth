@@ -1,9 +1,5 @@
-/*jslint browser:true*/
 (function (window) {
     'use strict';
-
-    // our constructor
-    window.ScrollDepth = function () {
 
         // fire-off baseline event
         console.log('baseline');
@@ -89,7 +85,7 @@
         function checkPercentages(percentages, scrollDistance) {
             each(percentages, function (key, val) {
                 if (inArray(key, cache) === -1 && scrollDistance >= val) {
-                    console.log('percentage = ' + key + '.');
+                        console.log('you have scrolled = ' + key);
                     cache.push(key);
                 }
             });
@@ -123,5 +119,4 @@
             checkPercentages(percentages, scrollDistance);
 
         }, 500);
-    };
 }(window));
